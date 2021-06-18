@@ -1,2 +1,0 @@
-# memories.github.io
-images
