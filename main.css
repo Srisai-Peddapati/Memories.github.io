@@ -1,74 +1,48 @@
 
-* {
-  box-sizing: border-box;
-  padding-left: 4px;
-  padding-right: 4px;
-}
 .avatar {
-    width: 100px;
+    width: 90px;
     height: 90px;
     border-radius: 100%;
 }
-
-.headr {
-  padding: auto;
-    padding-top: 20px;
-padding-left: 17%;
-padding-bottom: 28px;
-}
 .avatar:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
-
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 .avatar{
-    transition: transform 500ms ease-in-out 25ms ;
+  transition: transform 500ms ease-in-out 25ms ;
 }
 
-  
-  .column {
-    float: right;
-    width: 50%;
-    padding: 5px;
-    
-  }
-  
-  
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
 
-  .img {
-    border-radius: 8%;
-  }
-  .img:hover {
-    transform: scale(1.03); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
   
-  .column2 {
-    float: right;
-    width: 25%;
-    padding: 5px;
-    
-  }
-  
-  
-  .row2::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .column3{
-    float: right;
-    width: 33.33%;
-    padding: 5px;
-    
-  }
-  
-  
-  .row3::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+}
+
+.column img {
+  margin-top: 12px;
+  border-radius: 15px;
+  height: auto;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
