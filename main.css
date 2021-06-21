@@ -34,6 +34,11 @@ body {
   
 }
 
+.columnd img {
+  margin-top: 12px;
+  border-radius: 15px;
+  
+}
 .column img {
   margin-top: 12px;
   border-radius: 15px;
@@ -45,4 +50,14 @@ body {
   content: "";
   display: table;
   clear: both;
+}
+.scroll-text{
+  overflow-y: auto;
+  height: 1000px;
+  overflow-x: hidden;
+  background-color: #fff;
+  text-align: left;
+  padding: 3px;
+  box-sizing: border-box;
+  font-family: 'MyriadPro-Regular';
 }
